@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto 05 - Blog Semântico</title>
+        <!-- CSS Externo -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+            <!-- Barra de navegação -->
+            <nav id="navbar">
+                <!-- Barra de Navegação Interior -->
+                <div id="navbar-inner">
+                    <h2>Blog</h2>
+                    <ul id="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </div>
+                <!-- Fim da Barra de Navegação Interior -->
+            </nav>
+            <!-- Fim da BArra de Navegação -->
+        </header>
+        <!-- Fim do Cabeçalho -->
+
+        <!-- Div Container para limitação de Largura de Elementos -->
+        <div class="container">
+            <!-- Conteúdo Principal -->
+            <main id="posts-container">
+                <!-- Posts Principais -->
+                <article class="post">
+                    <img src="img/f1.jpg" alt="Passeio de barco">
+                    <h3 class="title"><a href="#">Título 1</a></h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ab dolorem nesciunt sunt, fugit enim in error dolorum placeat adipisci?
+                        Rem ducimus incidunt labore magni dignissimos quae officia aliquam, aspernatur accusantium.
+                    </p>
+                    <p class="author">Por: Leonardo Zani de Souza</p>
+                    <a href="#">Leia Mais!</a>
+                </article>
+                <article class="post">
+                    <img src="img/f2.jpg" alt="Contemplando uma linda cachoeira">
+                    <h3 class="title"><a href="#">Título 2</a></h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ab dolorem nesciunt sunt, fugit enim in error dolorum placeat adipisci?
+                        Rem ducimus incidunt labore magni dignissimos quae officia aliquam, aspernatur accusantium.
+                    </p>
+                    <p class="author">Por: Leonardo Zani de Souza</p>
+                    <a href="#">Leia Mais!</a>
+                </article>
+                <article class="post">
+                    <img src="img/f3.jpg" alt="Admirando belos balões alçando voo">
+                    <h3 class="title"><a href="#">Título 3</a></h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ab dolorem nesciunt sunt, fugit enim in error dolorum placeat adipisci?
+                        Rem ducimus incidunt labore magni dignissimos quae officia aliquam, aspernatur accusantium.
+                    </p>
+                    <p class="author">Por: Leonardo Zani de Souza</p>
+                    <a href="#">Leia Mais!</a>
+                </article>
+                <!-- Fim dos Posts Principais -->
+            </main>
+            <!-- Fim do Conteúdo Principal -->
+            <!-- Navegação Lateral-->
+            <aside id="sidebar">
+                <!-- Side de Busca -->
+                <section id="search-bar">
+                    <h4>Busca</h4>
+                    <form>
+                        <input type="text" placeholder="Pesquise no Blog">
+                        <input type="submit" value="Buscar!">
+                    </form>
+                </section>
+                <!-- Fim da Side de Busca-->
+                <!-- Side de Categorias -->
+                <section id="categories">
+                    <h4>Categorias</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Paisagens</a></li>
+                            <li><a href="#">Aventuras</a></li>
+                            <li><a href="#">Viagens Longas</a></li>
+                            <li><a href="#">Florestas</a></li>
+                            <li><a href="#">Cachoeiras</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <!-- Fim da Side de Categorias -->
+                <!-- Side de Tags -->
+                <section id="tags">
+                    <h4>Tags</h4>
+                    <div id="tags-container">
+                        <a href="#">Lifestyle</a>
+                        <a href="#">Viagem</a>
+                        <a href="#">Barco</a>
+                        <a href="#">Trilhas</a>
+                        <a href="#">Tirolesa</a>
+                        <a href="#">Rafting</a>
+                        <a href="#">Parapente</a>
+                    </div>
+                </section>
+                <!-- Fim da Side de Tags -->
+            </aside>
+            <!-- Fim da Navegação Lateral-->
+        </div>
+        <!-- Fim do Container -->
+        <!-- Rodapé da Página -->
+        <footer id="footer">
+            <h2>Blog</h2>
+            <p>Os melhores registros de aventuras</p>
+            <p>2024 &copy; Leonardo Zani de Souza </p>
+        </footer>
+        <!-- Fim do Rodapé da Página -->
+    </body>
+</html>

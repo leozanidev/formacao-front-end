@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+}
+
+/* Definindo Media Query */
+@media screen and ( max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* Mobile First */
+p {
+    background-color: red;
+}
+
+@media screen and (min-width: 800px) {
+    p{
+        background-color: blue
+    }
+}
+
+/* Landscape (Modo Paisagem) */
+h3{
+    display: none;
+}
+@media screen and (orientation: landscape) {
+    h3 {
+        display: block;
+    }
+}

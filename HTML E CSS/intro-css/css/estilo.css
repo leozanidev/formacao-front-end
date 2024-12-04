@@ -1,0 +1,525 @@
+/* Aula 44 - CSS Externo */
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: blueviolet;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* Aula 45 - Ordem do CSS */
+p {
+    color: brown;
+}
+
+/* Aula 47 - Comentários */
+
+/* Aula 49 - Classes */
+.paragrafo {
+    /* background-color: #000; */
+    color: aqua;
+    padding: 5px;
+}
+
+/* Aula 50 - ID's */
+#titulo-exclusivo {
+    background-color: purple;
+    color: yellow;
+    padding: 20px;
+}
+
+/* Aula 51 - Ordem dos Seletores */
+h2 {
+    border-bottom: 5px solid red;
+}
+
+.titulo {
+    border-bottom: 5px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 5px solid green;
+}
+
+/* Aula 53 - Nome das Cores */
+.color-name {
+    color: crimson;
+}
+
+/* Aula 54 - Cores Hexadecimais */
+.hex {
+    color: #44D590;
+}
+
+/* Aula 55 - Aprofundando Cores Hexadecimais */
+.simple-hex {
+    color: #444;
+}
+
+.simple-hex-2 {
+    color: #B3F;
+}
+
+/* Aula 56 - RGB */
+.rgb-vermelho {
+    color: rgb( 255, 0, 0 );
+}
+
+.rgb-verde {
+    color: rgb( 0, 255, 0 );
+}
+
+.rgb-azul {
+    color: rgb( 0, 0, 255 );
+}
+
+.rgb-misturado {
+    color: rgb( 150, 200, 150);
+}
+
+/* Aula 57 - RGBa */
+.rgba {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.rgba-1 {
+    color: rgba(255, 0, 0, 1);
+}
+
+.rgba-menorque1 {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+/* Aula 58 - HSL */
+.hsl {
+    color: hsl(100, 30%, 15%);
+}
+
+.hsl-2 {
+    color: hsl(90, 75%, 25%);
+}
+
+/* Aula 59 - Corese do Background */
+.bg {
+    background-color: #B3F;
+    color: #000;
+    border: none;
+}
+
+.bg-2 {
+    background-color: #000;
+    color: #B3F;
+}
+
+/* Aula 60 - Background Opacity */
+.bg-opacity {
+    background-color: #000;
+    color: green;
+    opacity: 0.2;
+}
+
+.bg-opacity-2 {
+    background-color: #000;
+    color: green;
+    opacity: 0.8;
+}
+
+/* Aula 61 - RGBa para Background */
+.rgba-opacity {
+    background-color: rgba(90, 120, 20, 0.5);
+    color: #000;
+}
+
+/* Aula 62 - Background Images */
+.bg-img {
+    background-image: url("../img/nature.jpg");
+    padding: 20px;
+    color: #fff;
+}
+
+/* Aula 63 - Centralizando a Imagem no Background */
+.img-nao-centralizada, .img-centralizada {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/bridge.jpg");
+}
+
+.img-centralizada {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Aula 65 - Width e Height */
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2  {
+    height: 500px;
+    background-color: gray;
+}
+
+/* Aula 66 - Padding */
+.sem-padding, .com-padding {
+    background-color: #111;
+    color: #FFF;
+}
+
+.com-padding {
+    padding: 20px;
+}
+
+/* Aula 67 - Padding Individuais */
+.padding-ind {
+    background-color: #000;
+    color: #FFF;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+/* Aula 68 - Shorthand Padding */
+.shorthand-padding {
+    background-color: #444;
+    padding: 10px 20px 30px 40px;
+}
+
+.shorthand-padding-2 {
+    background-color: #000;
+    padding: 50px 25px;
+}
+
+/* Aula 69 - Padding com Width */
+.sem-borderbox {
+    background-color: #000;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+}
+
+.com-borderbox {
+    background-color: #666;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Aula 70 - Bordas */
+.border, .border-2 {
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+}
+
+.border {
+    border: 10px solid red;
+}
+
+.border-2 {
+    border: 15px dotted navy;
+}
+
+/* Aula 71 - Bordas Individuais */
+.border-left {
+    border-left: 5px dotted darkblue;
+}
+
+.border-bottom{
+    border-bottom: 10px solid darkred;
+}
+
+/* Aula 71 - Bordas Arredondadas */
+.rounded-border {
+    border: 10px solid red;
+    border-radius: 15px;
+}
+
+.rounded-border-2 {
+    border: 10px solid blue;
+    border-radius: 55px;
+}
+
+/* Aula 72 - Margin */
+.margin {
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.margintopo {
+    background-color: red;
+    color: #FFF;
+    margin-top: 25px;
+}
+
+.marginshorthand{
+    background-color: violet;
+    color: #000;
+    margin: 20px 10px;
+}
+
+/*Aula 73 - Unindo Conceitos Box Model */
+.box-model {
+    background-color: #444;
+    color: antiquewhite;
+    border: 10px solid blue;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 20px 30px;
+    height: 200px;
+    width: 200px;
+}
+
+/* DESAFIO 03 */
+#box-model {
+    background-color: #000;
+    width: 400px;
+    height: 400px;
+    border: 10px solid #AAA;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin: 50px;
+    outline: 10px solid red;
+}
+
+.texto-h2 {
+    background-color: #FFF;
+    color: #B3F;
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Aula 75 - Alinhamento de Textos */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+}
+
+/* Aula 76 - Decorando Textos */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/* Aula 77 - Transformando Textos */
+.text-transform {
+    text-transform: uppercase;
+}
+
+.text-transform-2 {
+    text-transform: lowercase;
+}
+
+/* Aula 78 - Espaçamento entre Letras*/
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* Aula 79 - Fontes */
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* Aula  80 - Estilos de Fontes */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* Aula 81 - Espessura da Fonte */
+.thin,
+.bold,
+.bolder{
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* Aula 82 - Tamanho da Fonte */
+.small {
+    font-size: 10px;
+}
+
+.big {
+    font-size: 90px;
+}
+
+/* Aula 83 - Display */
+.inline-box {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.block {
+    display: block;
+    background-color: #44D590;
+    margin: 20px;
+}
+
+/* Aula 84 - Escondendo Elementos */
+.invisible {
+    display: none;
+}
+
+/* Aula 85 - Posição Static */
+.static {
+    position: static;
+    background-color: #391;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+}
+
+/* Aula 86 - Posição Relative */
+.relative {
+    position: relative;
+    background-color: #333;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* Aula 86 - Posição Abolute */
+.absolute {
+    position: absolute;
+    background-color: #444;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 40px;
+}
+
+/* Aula 87 -Usando Absolute com Relative */
+.relative-container {
+    width: 400px;
+    height: 400px;
+    border: 2px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #420;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 20px;
+    left: 20px;
+}
+
+.absolute-2 {
+    top: 20px;
+    right: 20px;
+}
+
+/* Aula 88 - Position Fixed*/
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #981;
+    border: 2px solid blue;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+}
+
+/* Aula 88 - Position Sticky*/
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    border: 2px solid green;
+    position: sticky;
+    top: 10px;
+}
+
+/* Aula 89 - Z-Index */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    background-color: #666;
+    z-index: 3;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #999;
+    z-index: 2;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: #489;
+    z-index: 1;
+}

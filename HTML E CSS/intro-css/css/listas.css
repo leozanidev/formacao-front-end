@@ -1,0 +1,9 @@
+/* Aula 46 - Múltiplos Arquivos CSS */
+ul {
+    border: 1px solid red;
+    list-style: none;
+}
+
+li {
+    color: darkblue;
+}
