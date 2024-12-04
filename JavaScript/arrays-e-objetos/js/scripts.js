@@ -38,3 +38,5 @@ console.log(text.indexOf("g"));
 
 // Objetos (Object Literals)
 console.log("Objetos:");
+
+console.log("Teste Git!");
