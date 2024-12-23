@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+}
+
+body {
+  padding-bottom: 500px;
+  background-color: blueviolet;
+}
+
+h1 {
+  color: #fff;
+}
+
+/* Classe Dinâmica */
+.red-title {
+  font-size: 50px;
+  color: red;
+  background-color: #000;
+}
+
+.title {
+  font-size: 25;
+  color: darkblue;
+  background-color: #fff;
+}
