@@ -1,6 +1,9 @@
 // Importações necessárias para resgatar dados
 import { useState, useEffect } from "react";
 
+// CUSTOM HOOK
+import { useFetch } from "./hooks/useFetch";
+
 // URL da nossa API
 const url = "http://localhost:3000/products";
 
@@ -10,24 +13,27 @@ function App() {
   // Resgatando Dados
   const [products, setProducts] = useState([]);
 
+  // CUSTOM HOOK
+  const { data: items, httpConfig, loading, error } = useFetch(url);
+
+  // Pegando Dados
+  // useEffect(() => {
+  //   async function getData() {
+  //     const res = await fetch(url);
+
+  //     const data = await res.json();
+
+  //     console.log(data);
+
+  //     setProducts(data);
+  //   }
+
+  //   getData();
+  // }, []);
+
   // Enviando Dados
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-
-  // Pegando Dados
-  useEffect(() => {
-    async function getData() {
-      const res = await fetch(url);
-
-      const data = await res.json();
-
-      console.log(data);
-
-      setProducts(data);
-    }
-
-    getData();
-  }, []);
 
   // Função de Resgatar Dados e fazer o Envio
   const handleSubmit = async (e) => {
@@ -38,29 +44,37 @@ function App() {
       price,
     };
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product),
-    });
-    // Carregamento dinâmico
-    const addedProduct = await res.json();
+    // Refatorando
+    httpConfig(product, "POST");
 
-    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+    //   const res = await fetch(url, {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(product),
+    //   });
+    //   // Carregamento dinâmico
+    //   const addedProduct = await res.json();
+
+    //   setProducts((prevProducts) => [...prevProducts, addedProduct]);
   };
 
   return (
     <>
       <h1>HTTP com React</h1>
       {/* Resgatando Dados de um Banco */}
+      {/* LOADING */}
+      {loading && <p>Carregando...</p>}
+      {/* Tratamento de Erros */}
+      {error && <p>{error}</p>}
       <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name}: R${product.price}
-          </li>
-        ))}
+        {items &&
+          items.map((product) => (
+            <li key={product.id}>
+              {product.name}: R${product.price}
+            </li>
+          ))}
       </ul>
       {/* Adicionando Dados ao Banco */}
       <div className="add-product">
@@ -81,7 +95,10 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value="Enviar" />
+          {/* <input type="submit" value="Enviar" /> */}
+          {/* LOADING POST */}
+          {loading && <input type="submit" disabled value="Aguarde" />}
+          {!loading && <input type="submit" value="Enviar" />}
         </form>
       </div>
     </>
