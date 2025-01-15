@@ -79,5 +79,3 @@ export const useFetch = (url) => {
 
   return { data, httpConfig, loading, error };
 };
-
-export default useFetch;

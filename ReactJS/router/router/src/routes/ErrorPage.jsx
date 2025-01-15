@@ -1,10 +1,11 @@
-// Configurando Página de Erro
+// Hook para pegar dados do erro
 import { useRouteError } from "react-router-dom";
 
 const ErrorPage = () => {
+  // Configurando o HJook de Erro
   const error = useRouteError();
-  console.log(error);
-
+  // Imprimindo o Erro no Console
+  console.error(error);
   return (
     <div>
       <h1>Ops!</h1>
